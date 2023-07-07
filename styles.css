@@ -103,10 +103,12 @@ body {
   border-radius: 0.2rem;
   border: none;
   cursor: pointer;
+  color:  hsl(0, 0%, 100%);
 }
 .custom_input:focus {
   outline: none;
 }
+
 
 .people {
   position: relative;
@@ -170,4 +172,47 @@ body {
     border-radius: 5px;
     background-color: hsl(172, 67%, 45%);
     font-family: "Space Mono", monospace;
+    cursor: pointer;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 428px){
+    .logo {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+      }
+.main_container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 100vh;
+}
+.container_one {
+    margin-left: 1.2rem;
+    width: 100%;
+  }
+  .container_two {
+    /* position: relative; */
+    padding: 10px;
+    right: 10px;
+    margin-top: 0.6rem;
+    margin-left: 20px;
+    background-color: hsl(183, 100%, 15%);
+    width: 95%;
+    height: 37vh;
+    border-radius: 12px;
+  }
+  .reset_btn{
+    position: relative;
+    top: 3rem;
+    
+    border: none;
+    width: 87%;
+    height: 42px;
+    border-radius: 5px;
+    background-color: hsl(172, 67%, 45%);
+    font-family: "Space Mono", monospace;
+    cursor: pointer;
+}
 }
