@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Space+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(185, 41%, 84%);
+  height: 100vh;
+  font-family: "Space Mono", monospace;
+}
+.logo {
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+.main_container {
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+  width: 50%;
+  height: 42vh;
+  padding: 0.5rem;
+  border-radius: 10px 10px 7px 7px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.container_one {
+  margin-left: 1.2rem;
+  width: 50%;
+}
+
+/* container_one */
+.bill {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+.bill img {
+  position: absolute;
+  top: 36px;
+  left: 7px;
+}
+.bill_label {
+  color: hsl(183, 100%, 15%);
+  margin-bottom: 0.3rem;
+}
+.bill_input {
+  padding: 0.6rem;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  width: 95%;
+  border-radius: 0.3rem;
+  text-align: right;
+}
+.bill_input:focus {
+  outline: none;
+}
+
+.bill_input[type="number"]::-webkit-inner-spin-button,
+.bill_input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.tip_label {
+  color: hsl(183, 100%, 15%);
+}
+
+.tip_btn_one {
+  margin-top: 0.5rem;
+}
+.tip_btn_one button {
+  width: 6.35rem;
+  height: 2.3rem;
+  font-size: 18px;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Space Mono", monospace;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+.tip_btn_two button {
+  margin-top: 0.4rem;
+  margin-bottom: 0.9rem;
+  width: 6.35rem;
+  height: 2.3rem;
+  font-size: 18px;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Space Mono", monospace;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+.custom_input {
+  width: 30%;
+  height: 2.3rem;
+  background-color: hsl(183, 100%, 15%);
+  font-family: "Space Mono", monospace;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+.custom_input:focus {
+  outline: none;
+}
+
+.people {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.number_label {
+  font-size: 0.8rem;
+}
+.people_input {
+  padding: 0.6rem;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  width: 95%;
+  border-radius: 0.3rem;
+  text-align: right;
+}
+.people img {
+  position: absolute;
+  top: 28px;
+  left: 10px;
+  width: 0.8rem;
+}
+
+/* Container_two */
+.container_two {
+  position: relative;
+  padding: 10px;
+  right: 10px;
+  width: 50%;
+  margin-right: 6px;
+  margin-top: 0.65rem;
+  background-color: hsl(183, 100%, 15%);
+  width: 50%;
+  height: 37vh;
+  border-radius: 9px;
+}
+.first_amount{
+    margin-top: 1.8rem;
+    margin-left: 1.8rem;
+}
+.second_amount{
+    margin-top: 1.7rem;
+    margin-left: 1.7rem;
+}
+.amount_div h3, .total_div h3{
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+}
+.amount_div p, .total_div p{
+    font-size: 10px;
+    color: hsl(184, 14%, 56%);
+}
+.reset_btn{
+    position: relative;
+    top: 6rem;
+    left: 1.3rem;
+    border: none;
+    width: 88%;
+    height: 39px;
+    border-radius: 5px;
+    background-color: hsl(172, 67%, 45%);
+    font-family: "Space Mono", monospace;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator App</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="logo" />
+    </div>
+    <main>
+      <section class="main_container">
+        <div class="container_one">
+          <div class="bill">
+            <label for="bill" class="bill_label">Bill</label>
+            <img src="./images/icon-dollar.svg" alt="a dollar sign" />
+            <input type="number" class="bill_input" placeholder="0" />
+          </div>
+          <div class="tip">
+            <label for="tip" class="tip_label">Select Tip %</label>
+            <div class="tip_btn_one">
+              <button>5%</button>
+              <button>10%</button>
+              <button>15%</button>
+            </div>
+            <div class="tip_btn_two">
+              <button>25%</button>
+              <button>50%</button>
+              <input type="number" class="custom_input" placeholder="Custom" />
+            </div>
+          </div>
+          <div class="people">
+            <label for="text" class="number_label">Number of People</label>
+            <img src="./images/icon-person.svg" alt="a person" />
+            <input type="number" class="people_input" placeholder="0" />
+          </div>
+        </div>
+        <div class="container_two">
+          <div class="first_amount">
+            <div class="amount_div">
+              <h3>Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+            <div class="value_label"></div>
+          </div>
+          <div class="second_amount">
+            <div class="total_div">
+              <h3>Total</h3>
+              <p>/ person</p>
+            </div>
+            <div class="value_label"></div>
+          </div>
+
+          <button class="reset_btn">RESET</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
