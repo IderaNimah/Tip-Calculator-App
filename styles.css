@@ -103,12 +103,11 @@ body {
   border-radius: 0.2rem;
   border: none;
   cursor: pointer;
-  color:  hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 .custom_input:focus {
   outline: none;
 }
-
 
 .people {
   position: relative;
@@ -146,51 +145,62 @@ body {
   height: 37vh;
   border-radius: 9px;
 }
-.first_amount{
-    margin-top: 1.8rem;
-    margin-left: 1.8rem;
+.first_amount {
+  margin-top: 1.8rem;
+  margin-left: 1.8rem;
 }
-.second_amount{
-    margin-top: 1.7rem;
-    margin-left: 1.7rem;
+.second_amount {
+  margin-top: 1.7rem;
+  margin-left: 1.7rem;
 }
-.amount_div h3, .total_div h3{
-    font-size: 14px;
-    color: hsl(0, 0%, 100%);
+.amount_div h3,
+.total_div h3 {
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
 }
-.amount_div p, .total_div p{
-    font-size: 10px;
-    color: hsl(184, 14%, 56%);
+.amount_div p,
+.total_div p {
+  font-size: 10px;
+  color: hsl(184, 14%, 56%);
 }
-.reset_btn{
-    position: relative;
-    top: 6rem;
-    left: 1.3rem;
-    border: none;
-    width: 88%;
-    height: 39px;
-    border-radius: 5px;
-    background-color: hsl(172, 67%, 45%);
-    font-family: "Space Mono", monospace;
-    cursor: pointer;
+.reset_btn {
+  position: relative;
+  top: 6rem;
+  left: 1.3rem;
+  border: none;
+  width: 88%;
+  height: 39px;
+  border-radius: 5px;
+  background-color: hsl(172, 67%, 45%);
+  font-family: "Space Mono", monospace;
+  cursor: pointer;
 }
 
 /* Responsiveness */
-@media screen and (max-width: 428px){
-    .logo {
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 5rem;
-      }
-.main_container{
+@media screen and (max-width: 428px) {
+  .logo {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  .main_container {
     display: flex;
     flex-direction: column;
     width: 95%;
     height: 100vh;
-}
-.container_one {
+  }
+  .container_one {
     margin-left: 1.2rem;
     width: 100%;
+  }
+  .tip_btn_one button {
+    width: 7rem;
+  }
+  .tip_btn_two button {
+    width: 7rem;
+  }
+  .custom_input {
+    width: 28.5%;
   }
   .container_two {
     /* position: relative; */
@@ -203,10 +213,10 @@ body {
     height: 37vh;
     border-radius: 12px;
   }
-  .reset_btn{
+  .reset_btn {
     position: relative;
     top: 3rem;
-    
+
     border: none;
     width: 87%;
     height: 42px;
@@ -214,5 +224,5 @@ body {
     background-color: hsl(172, 67%, 45%);
     font-family: "Space Mono", monospace;
     cursor: pointer;
-}
+  }
 }
