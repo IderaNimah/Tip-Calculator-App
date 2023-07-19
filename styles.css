@@ -266,3 +266,15 @@ body {
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 376px) {
+  .tip_btn_one button {
+    width: 6.4rem;
+  }
+  .tip_btn_two button {
+    width: 6.4rem;
+  }
+  .custom_input {
+    width: 29%;
+}
+}
