@@ -73,18 +73,20 @@ body {
 .tip_btn_one {
   margin-top: 0.5rem;
 }
-.tip_btn_one button {
+.btn_hover_one{
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+.tip_btn_one button{
   width: 6.35rem;
   height: 2.3rem;
   font-size: 18px;
-  background-color: hsl(183, 100%, 15%);
-  color: hsl(0, 0%, 100%);
   font-family: "Space Mono", monospace;
   border-radius: 0.2rem;
   border: none;
   cursor: pointer;
 }
-.tip_btn_one .btn_hover_one:hover{
+.active_tip{
   background-color:  hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%) ;
 }

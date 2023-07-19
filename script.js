@@ -2,11 +2,14 @@ const billAmountInput = document.querySelector(".bill_input");
 const numPeopleInput = document.querySelector(".people_input");
 const tipAmount = document.querySelector(".tip_value");
 const totalPersonCalculaor = document.querySelector(".total_person_calc");
-
+// const tips = document.querySelectorAll(".tip");
+const tips = document.querySelectorAll(".tip_percentage_btn");
 
 billAmountInput.addEventListener("input", billInputFun);
 numPeopleInput.addEventListener("input", peopleInputFun);
-
+tips.forEach(function(val){
+    val.addEventListener("click", handleClick)
+});
 
 billAmountInput.value = "0.0";
 numPeopleInput.value = "1";
@@ -15,6 +18,7 @@ totalPersonCalculaor.innerHTML = "$" + (0.0).toFixed(2);
 
 let billValue = 0.0;
 let peopleValue = 1;
+let tipValue = 0.15;
 
 function billInputFun(){
     billValue=parseFloat(billAmountInput.value)
@@ -26,4 +30,14 @@ function peopleInputFun(){
     console.log(peopleValue);
 }
 
+ function handleClick(event){
+ tips.forEach(function (val){
+     val.classList.remove("active_tip");
+    if (event.target.innerHTML == val.innerHTML){
+        val.classList.add("active_tip");
+        tipValue = parseFloat(val.innerHTML)/100
+    }
+ });
+ console.log(tipValue);
+}
 
