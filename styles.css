@@ -120,6 +120,14 @@ body {
 .custom_input:focus {
   outline: none;
 }
+.first_amount, .second_amount{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  color: hsl(172, 67%, 45%) ;
+  margin-right: 1.7rem;
+}
 
 .people {
   position: relative;
