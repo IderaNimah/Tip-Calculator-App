@@ -10,7 +10,7 @@ tips.forEach(function (val) {
   val.addEventListener("click", handleClick);
 });
 
-billAmountInput.value = "0.0";
+billAmountInput.value = "0";
 numPeopleInput.value = "1";
 tipAmount.innerHTML = "$" + (0.0).toFixed(2);
 totalPersonCalculator.innerHTML = "$" + (0.0).toFixed(2);
@@ -43,7 +43,7 @@ function handleClick(event) {
 function calculateTip(){
 if (peopleValue >= 1){
     let tipAmountValue = (billValue * tipValue)/peopleValue;
-    let total= (billValue/peopleValue) + tipAmountValue;
+    let total= (billValue / peopleValue) + tipAmountValue;
     tipAmount.innerHTML = "$"+ tipAmountValue.toFixed(2);
     totalPersonCalculator.innerHTML = "$"+ total.toFixed(2);
 }
