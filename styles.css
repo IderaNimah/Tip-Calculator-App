@@ -188,7 +188,7 @@ body {
   font-size: 10px;
   color: hsl(184, 14%, 56%);
 }
-.reset {
+.reset{
   position: relative;
   top: 8rem;
   left: 1.3rem;
@@ -255,7 +255,7 @@ body {
     height: 37vh;
     border-radius: 12px;
   }
-  .reset {
+  .reset{
     position: relative;
     top: 3rem;
     border: none;
