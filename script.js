@@ -5,6 +5,7 @@ const totalPersonCalculator = document.querySelector(".total_person_calc");
 const tips = document.querySelectorAll(".tip_percentage_btn");
 const tipCustom = document.querySelector(".custom_input");
 const resetButton = document.querySelector(".reset");
+const error = document.querySelector(".error");
 
 billAmountInput.addEventListener("input", billInputFun);
 numPeopleInput.addEventListener("input", peopleInputFun);
@@ -30,7 +31,16 @@ function billInputFun() {
 
 function peopleInputFun() {
   peopleValue = parseFloat(numPeopleInput.value);
-  calculateTip();
+  
+  if (peopleValue < 1){
+    error.style.display = "flex";
+    numPeopleInput.style.border = "thick solid red";
+  }else{
+    error.style.display = "none";
+    numPeopleInput.style.border = "none";
+    calculateTip();
+
+  }
 }
 
 function tipInputFun(){
