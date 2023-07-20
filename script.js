@@ -4,6 +4,7 @@ const tipAmount = document.querySelector(".tip_value");
 const totalPersonCalculator = document.querySelector(".total_person_calc");
 const tips = document.querySelectorAll(".tip_percentage_btn");
 const tipCustom = document.querySelector(".custom_input");
+const resetButton = document.querySelector(".reset");
 
 billAmountInput.addEventListener("input", billInputFun);
 numPeopleInput.addEventListener("input", peopleInputFun);
@@ -11,6 +12,7 @@ tips.forEach(function (val) {
   val.addEventListener("click", handleClick);
 });
 tipCustom.addEventListener("input", tipInputFun);
+resetButton.addEventListener('click', reset)
 
 billAmountInput.value = "0";
 numPeopleInput.value = "1";
@@ -58,10 +60,10 @@ if (peopleValue >= 1){
     totalPersonCalculator.innerHTML = "$"+ total.toFixed(2);
 }
 }
-// function resetBtnFunc() {
-//     billAmountInput.value = "0"
-//     billInputFunc()
-//     numPeopleInput.value = "0"
-//     peopleInputFunc()
-//     customTipInput.value = ""
-// }
+function reset(){
+    billAmountInput.value = "0";
+    billInputFun()
+    numPeopleInput.value = "1";
+    peopleInputFun()
+    tipCustom.value="";
+}
